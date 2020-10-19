@@ -1,0 +1,20 @@
+Package: vfbconnectr
+Type: Package
+Title: An R Interface to vfb-connect to query virtualflybrain.org
+Version: 0.1.0
+Authors@R: c(person("Gregory","Jefferis", email="jefferis@gmail.com", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0587-9355")))
+Description: Provides an R interface to the Python package vfb-connect.
+    'VFB_connect' is a Python lib that wraps data / knowledgebase query 
+    endpoints and returns 'VFB_json'.
+Config/reticulate:
+  list(
+    packages = list(
+      list(package = "vfb-connect", pip = TRUE)
+    )
+  )License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    reticulate
+License: GPL-3
