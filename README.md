@@ -2,6 +2,7 @@
 # vfbconnectr
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.com/jefferis/vfbconnectr.svg?branch=master)](https://travis-ci.com/jefferis/vfbconnectr)
 <!-- badges: end -->
 
 vfbconnectr provides a simple R wrapper (via [reticulate](https://rstudio.github.io/reticulate/)) for the VFB_connect Python library that enables programmatic access to the https://virtualflybrain.org website and associated services.
