@@ -6,7 +6,7 @@ cache: packages
 
 
 before_install:
-  - pyenv global 3.7
+  - pyenv global 3.6
   - python -VV
   - python3 -VV
   - pip -V
