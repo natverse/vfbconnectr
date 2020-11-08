@@ -12,7 +12,7 @@ before_install:
   - python -VV
   - python3 -VV
   - pip -V
-  - pip3 -V
+  # - pip3 -V
   - python3 -m pip install vfb_connect
   - R -e 'install.packages("remotes")'
 
