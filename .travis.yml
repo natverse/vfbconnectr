@@ -10,6 +10,9 @@ addons:
       - deadsnakes
     packages:
       - python3.7
+      - libharfbuzz-dev
+      - libfribidi-dev
+
 before_install:
   - sudo apt-get update
   - sudo apt purge python2.7-minimal
