@@ -3,6 +3,8 @@
 language: R
 cache: packages
 
+install: pip3 install vfb_connect
+
 before_cache: Rscript -e 'remotes::install_cran("pkgdown")'
   deploy:
     provider: script
