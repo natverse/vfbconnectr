@@ -17,7 +17,7 @@ vc=VfbConnect()
 }
 }
 \seealso{
-\code{\link{VfbConnect}}
+\code{\link{VfbConnect}}, \code{\link{vc_install}}
 }
 \author{
 \strong{Maintainer}: Gregory Jefferis \email{jefferis@gmail.com} (\href{https://orcid.org/0000-0002-0587-9355}{ORCID})

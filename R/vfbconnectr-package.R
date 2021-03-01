@@ -1,5 +1,5 @@
 #' @keywords internal
-#' @seealso \code{\link{VfbConnect}}
+#' @seealso \code{\link{VfbConnect}}, \code{\link{vc_install}}
 #'
 #' @examples
 #' \dontrun{
