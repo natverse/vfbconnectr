@@ -37,9 +37,7 @@ vc$neo_query_wrapper$get_anatomical_individual_TermInfo(list('VFB_00010001'))
 # Query by label supported by default$
 vc$get_terms_by_region('fan-shaped body')
 
-\dontrun{
 # the same but returning raw JSON
 vc2=VfbConnect(raw=TRUE)
 vc2$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE)
-}
 }

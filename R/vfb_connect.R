@@ -25,11 +25,9 @@
 #' # Query by label supported by default$
 #' vc$get_terms_by_region('fan-shaped body')
 #'
-#' \dontrun{
 #' # the same but returning raw JSON
 #' vc2=VfbConnect(raw=TRUE)
 #' vc2$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE)
-#' }
 VfbConnect <- function(raw=FALSE) {
   if(raw)
     vfb_connectraw$cross_server_tools$VfbConnect()
