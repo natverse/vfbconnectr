@@ -17,6 +17,14 @@
 #' vc$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE) %>%
 #' vc_df
 vc_df <- function(x, ..., tibble=FALSE) {
+  if(is.data.frame(x)) return(x)
   DFFUN=ifelse(tibble, as_tibble, as.data.frame)
-  bind_rows(lapply(x, DFFUN, ...))
+  ll=lapply(x, null2na)
+  bind_rows(lapply(ll, DFFUN, ...))
+}
+
+null2na <- function(x, repl=NA) {
+  sapply(x, simplify = F, function(y) {
+    if(length(y)==0) repl else y
+  })
 }
