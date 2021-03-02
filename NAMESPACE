@@ -2,6 +2,7 @@
 
 export("%>%")
 export(VfbConnect)
+export(read.neurons.vfb)
 export(vc_df)
 export(vc_install)
 importFrom(dplyr,bind_rows)
