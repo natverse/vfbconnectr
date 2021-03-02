@@ -2,6 +2,8 @@
 #'
 #' @details See \url{https://pypi.org/project/vfb-connect/}. The \code{raw=TRUE}
 #'   option is mostly useful to see what output would look like.
+#' @param ... Additional arguments passed to Python's `VfbConnect`. See
+#'   examples.
 #' @param raw Whether to return python list containing raw JSON (default
 #'   \code{FALSE})
 #'
@@ -30,8 +32,13 @@
 #' # the same but returning raw JSON
 #' vc2=VfbConnect(raw=TRUE)
 #' vc2$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE)
-VfbConnect <- function(raw=FALSE) {
+#'
+#' \dontrun{
+#' # specify a particular neo4j graph database endpoint
+#' vc = VfbConnect(neo_endpoint="http://pdb.p2.virtualflybrain.org")
+#' }
+VfbConnect <- function(..., raw=FALSE) {
   if(raw)
-    vfb_connectraw$cross_server_tools$VfbConnect()
-  else vfb_connect$cross_server_tools$VfbConnect()
+    vfb_connectraw$cross_server_tools$VfbConnect(...)
+  else vfb_connect$cross_server_tools$VfbConnect(...)
 }

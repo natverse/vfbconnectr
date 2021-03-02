@@ -4,9 +4,12 @@
 \alias{VfbConnect}
 \title{Return reference to VfbConnect object}
 \usage{
-VfbConnect(raw = FALSE)
+VfbConnect(..., raw = FALSE)
 }
 \arguments{
+\item{...}{Additional arguments passed to Python's `VfbConnect`. See
+examples.}
+
 \item{raw}{Whether to return python list containing raw JSON (default
 \code{FALSE})}
 }
@@ -42,4 +45,9 @@ vc$get_terms_by_region('fan-shaped body') \%>\%
 # the same but returning raw JSON
 vc2=VfbConnect(raw=TRUE)
 vc2$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE)
+
+\dontrun{
+# specify a particular neo4j graph database endpoint
+vc = VfbConnect(neo_endpoint="http://pdb.p2.virtualflybrain.org")
+}
 }
