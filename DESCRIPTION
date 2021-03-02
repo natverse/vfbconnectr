@@ -23,3 +23,6 @@ Imports:
 License: GPL-3
 RoxygenNote: 7.1.1
 URL: https://jefferis.github.io/vfbconnectr, https://github.com/jefferis/vfbconnectr, https://pypi.org/project/vfb-connect/
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
