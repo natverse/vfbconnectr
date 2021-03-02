@@ -4,7 +4,7 @@
 \alias{VfbConnect}
 \title{Return reference to VfbConnect object}
 \usage{
-VfbConnect(..., raw = FALSE)
+VfbConnect(..., raw = FALSE, cache = TRUE)
 }
 \arguments{
 \item{...}{Additional arguments passed to Python's `VfbConnect`. See
@@ -12,6 +12,9 @@ examples.}
 
 \item{raw}{Whether to return python list containing raw JSON (default
 \code{FALSE})}
+
+\item{cache}{Whether to cache the VfbConnect object (default \code{T} since
+this can save some time).}
 }
 \value{
 An \code{list} containing the processed results or (when

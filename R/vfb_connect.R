@@ -6,6 +6,8 @@
 #'   examples.
 #' @param raw Whether to return python list containing raw JSON (default
 #'   \code{FALSE})
+#' @param cache Whether to cache the VfbConnect object (default \code{T} since
+#'   this can save some time).
 #'
 #' @return An \code{list} containing the processed results or (when
 #'   \code{raw=TRUE}) as python list containing raw JSON.
@@ -37,8 +39,14 @@
 #' # specify a particular neo4j graph database endpoint
 #' vc = VfbConnect(neo_endpoint="http://pdb.p2.virtualflybrain.org")
 #' }
-VfbConnect <- function(..., raw=FALSE) {
+VfbConnect <- function(..., raw=FALSE, cache=TRUE) {
+  if(!cache) memoise::forget(VfbConnect_memo)
+  VfbConnect_memo(..., raw=raw)
+}
+
+
+VfbConnect_memo <- memoise::memoise(function(..., raw=FALSE) {
   if(raw)
     vfb_connectraw$cross_server_tools$VfbConnect(...)
   else vfb_connect$cross_server_tools$VfbConnect(...)
-}
+})
