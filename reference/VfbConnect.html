@@ -117,7 +117,7 @@
     <p>Return reference to VfbConnect object</p>
     </div>
 
-    <pre class="usage"><span class='fu'>VfbConnect</span><span class='op'>(</span><span class='va'>...</span>, raw <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>VfbConnect</span><span class='op'>(</span><span class='va'>...</span>, raw <span class='op'>=</span> <span class='cn'>FALSE</span>, cache <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -131,6 +131,11 @@ examples.</p></td>
       <th>raw</th>
       <td><p>Whether to return python list containing raw JSON (default
 <code>FALSE</code>)</p></td>
+    </tr>
+    <tr>
+      <th>cache</th>
+      <td><p>Whether to cache the VfbConnect object (default <code>T</code> since
+this can save some time).</p></td>
     </tr>
     </table>
 
