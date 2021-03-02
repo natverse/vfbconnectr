@@ -41,6 +41,12 @@ jobs:
       - name: Install package
         run: R CMD INSTALL .
 
+      - name: Install miniconda
+        run: |
+          reticulate::install_miniconda()
+          vfbconnectr::vc_install()
+        shell: Rscript {0}
+
       - name: Deploy package
         run: |
           git config --local user.email "actions@github.com"
