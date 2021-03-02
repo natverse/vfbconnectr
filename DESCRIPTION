@@ -17,7 +17,9 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     reticulate,
-    magrittr
+    magrittr,
+    dplyr,
+    tibble
 License: GPL-3
 RoxygenNote: 7.1.1
 URL: https://jefferis.github.io/vfbconnectr, https://github.com/jefferis/vfbconnectr, https://pypi.org/project/vfb-connect/

@@ -2,6 +2,9 @@
 
 export("%>%")
 export(VfbConnect)
+export(vc_df)
 export(vc_install)
+importFrom(dplyr,bind_rows)
 importFrom(magrittr,"%>%")
 importFrom(reticulate,import)
+importFrom(tibble,as_tibble)
