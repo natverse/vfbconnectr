@@ -1,6 +1,9 @@
 #' Return reference to VfbConnect object
 #'
-#' @details See \url{https://pypi.org/project/vfb-connect/}
+#' @details See \url{https://pypi.org/project/vfb-connect/}. The \code{raw=TRUE}
+#'   option is mostly useful to see what output would look like.
+#' @param raw Whether to return python list containing raw JSON (default
+#'   \code{FALSE})
 #'
 #' @return An \code{list} containing the processed results or (when
 #'   \code{raw=TRUE}) as python list containing raw JSON.
@@ -9,8 +12,10 @@
 #' @examples
 #'
 #' vc=VfbConnect()
-#'
-#' vc$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'))
+#' # massive return
+#' # vc$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'))
+#' # do this to explore
+#' # vc$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686')) %>% View()
 #' vc$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE)
 #'
 #' vc$neo_query_wrapper$get_DataSet_TermInfo(list('Ito2013'), summary=TRUE)
@@ -20,9 +25,11 @@
 #' # Query by label supported by default$
 #' vc$get_terms_by_region('fan-shaped body')
 #'
+#' \dontrun{
 #' # the same but returning raw JSON
-#' vc2=VfbConnect(raw=T)
-#' vc2$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'))
+#' vc2=VfbConnect(raw=TRUE)
+#' vc2$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE)
+#' }
 VfbConnect <- function(raw=FALSE) {
   if(raw)
     vfb_connectraw$cross_server_tools$VfbConnect()
