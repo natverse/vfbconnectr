@@ -17,4 +17,6 @@ test_that("valid_vfbids works", {
   expect_false(valid_vfbids("rhubarb"))
   expect_equal(valid_vfbids(c("rhubarb", "VFB_001001dr")),
                c(F, T))
+  expect_false(valid_vfbids("VFB_001001000"))
+  expect_true(valid_vfbids("VFB_00100100"))
 })
