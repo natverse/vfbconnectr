@@ -2,7 +2,7 @@
 # vfbconnectr
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.com/jefferis/vfbconnectr.svg?branch=master)](https://travis-ci.com/jefferis/vfbconnectr)
+[![Travis build status](https://travis-ci.com/natverse/vfbconnectr.svg?branch=master)](https://travis-ci.com/natverse/vfbconnectr)
 [![natverse](https://img.shields.io/badge/natverse-Part%20of%20the%20natverse-a241b6)](https://natverse.github.io)
 <!-- badges: end -->
 
@@ -13,7 +13,7 @@ VFB_connect is developed by the core VFB team.
 ## Installation
 
 ``` r
-remotes::install_github("jefferis/vfbconnectr")
+remotes::install_github("natverse/vfbconnectr")
 ```
 
 **vfbconnectr** relies on the reticulate package and a Python installation. 
