@@ -23,7 +23,7 @@ Imports:
     memoise
 License: GPL-3
 RoxygenNote: 7.1.1
-URL: https://jefferis.github.io/vfbconnectr, https://github.com/jefferis/vfbconnectr, https://pypi.org/project/vfb-connect/
+URL: https://natverse.github.io/vfbconnectr, https://github.com/natverse/vfbconnectr, https://pypi.org/project/vfb-connect/
 Suggests: 
     testthat (>= 3.0.0),
     nat

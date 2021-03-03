@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.com/jefferis/vfbconnectr.svg?branch=master)](https://travis-ci.com/jefferis/vfbconnectr)
+[![natverse](https://img.shields.io/badge/natverse-Part%20of%20the%20natverse-a241b6)](https://natverse.github.io)
 <!-- badges: end -->
 
 vfbconnectr provides a simple R wrapper (via [reticulate](https://rstudio.github.io/reticulate/)) for the 
