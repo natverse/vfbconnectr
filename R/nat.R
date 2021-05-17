@@ -28,7 +28,7 @@ read.neurons.vfb <- function(x, template='JRC2018Unisex', ...) {
     x <- vc_df(x)[['id']]
   }
   if(length(x)==0)
-    stop("no valud ids!")
+    stop("no valid ids!")
   if(!all(valid_vfbids(x)))
     stop("some invalid VFB ids: ", x)
 
