@@ -28,7 +28,3 @@ null2na <- function(x, repl=NA) {
     if(length(y)==0) repl else y
   })
 }
-
-valid_vfbids <- function(x) {
-  grepl("^VFB_[0-9A-z]{8}$", x, perl = T)
-}
