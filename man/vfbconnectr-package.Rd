@@ -6,9 +6,7 @@
 \alias{vfbconnectr-package}
 \title{vfbconnectr: An R Interface to vfb-connect to query virtualflybrain.org}
 \description{
-Provides an R interface to the Python package vfb-connect.
-    'VFB_connect' is a Python lib that wraps data / knowledgebase query 
-    endpoints and returns 'VFB_json'.
+Provides an R interface to the Python package vfb-connect. 'VFB_connect' is a Python lib that wraps data / knowledgebase query endpoints and returns 'VFB_json'.
 }
 \details{
 vfbconnectr provides a simple R wrapper (via
