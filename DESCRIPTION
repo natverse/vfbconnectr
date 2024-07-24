@@ -29,7 +29,5 @@ Suggests:
 Config/testthat/edition: 3
 Remotes: 
     natverse/nat
-URL: https://github.com/natverse/vfbconnectr, 
-    https://natverse.github.io/vfbconnectr,
-    https://pypi.org/project/vfb-connect/
+URL: https://github.com/natverse/vfbconnectr, https://natverse.github.io/vfbconnectr, https://pypi.org/project/vfb-connect/, http://natverse.org/vfbconnectr/
 BugReports: https://github.com/natverse/vfbconnectr/issues

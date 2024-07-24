@@ -1,1 +1,4 @@
-url: https://natverse.github.io/vfbconnectr
+url: http://natverse.org/vfbconnectr/
+template:
+  bootstrap: 5
+
