@@ -2,8 +2,8 @@
 # vfbconnectr
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.com/natverse/vfbconnectr.svg?branch=master)](https://travis-ci.com/natverse/vfbconnectr)
 [![natverse](https://img.shields.io/badge/natverse-Part%20of%20the%20natverse-a241b6)](https://natverse.github.io)
+[![R-CMD-check](https://github.com/jefferis/vfbconnectr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jefferis/vfbconnectr/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 vfbconnectr provides a simple R wrapper (via [reticulate](https://rstudio.github.io/reticulate/)) for the 
