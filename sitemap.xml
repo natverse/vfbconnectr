@@ -1,24 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://natverse.github.io/vfbconnectr/index.html</loc>
-  </url>
-  <url>
-    <loc>https://natverse.github.io/vfbconnectr/reference/VfbConnect.html</loc>
-  </url>
-  <url>
-    <loc>https://natverse.github.io/vfbconnectr/reference/pipe.html</loc>
-  </url>
-  <url>
-    <loc>https://natverse.github.io/vfbconnectr/reference/read.neurons.vfb.html</loc>
-  </url>
-  <url>
-    <loc>https://natverse.github.io/vfbconnectr/reference/vc_df.html</loc>
-  </url>
-  <url>
-    <loc>https://natverse.github.io/vfbconnectr/reference/vc_install.html</loc>
-  </url>
-  <url>
-    <loc>https://natverse.github.io/vfbconnectr/reference/vfbconnectr-package.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>http://natverse.org/vfbconnectr/404.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/LICENSE.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/SUPPORT.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/authors.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/index.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/reference/VfbConnect.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/reference/index.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/reference/pipe.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/reference/read.neurons.vfb.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/reference/vc_df.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/reference/vc_install.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/reference/vfb_datasets.html</loc></url>
+<url><loc>http://natverse.org/vfbconnectr/reference/vfbconnectr-package.html</loc></url>
 </urlset>
+
