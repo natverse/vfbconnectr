@@ -35,19 +35,22 @@ str(vc$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686')), max=2)
 # do this to explore
 # vc$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686')) \%>\% View()
 vc$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE)
-
-vc$neo_query_wrapper$get_DataSet_TermInfo(list('Ito2013'), summary=TRUE)
-
-vc$neo_query_wrapper$get_anatomical_individual_TermInfo(list('VFB_00010001'))
-# Get all terms relevant to a brain region (all parts and all overlapping cells$
-# Query by label supported by default
-vc$get_terms_by_region('fan-shaped body') \%>\%
-  vc_df() \%>\%
-  head(10)
-
 # the same but returning raw JSON
 vc2=VfbConnect(raw=TRUE)
 vc2$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE)
+
+# Information about a dataset linked to a paper
+vc$neo_query_wrapper$get_DataSet_TermInfo(list('Ito2013'), summary=TRUE)
+
+vc$neo_query_wrapper$get_anatomical_individual_TermInfo(list('VFB_00010001'),  summary=T) \%>\%
+vc_df()
+
+# Get all terms relevant to a brain region (all parts and all overlapping cells)
+# Query by label supported by default
+#
+vc$get_terms_by_region('fan-shaped body', summary=TRUE) \%>\%
+  vc_df() \%>\%
+  head(10)
 
 \dontrun{
 # specify a particular neo4j graph database endpoint
