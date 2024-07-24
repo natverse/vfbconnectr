@@ -49,6 +49,7 @@ jobs:
       - name: Install miniconda
         run: |
           reticulate::install_miniconda()
+          reticulate::py_install("vfb-connect", pip = T, pip_options = "--upgrade --prefer-binary")
         shell: Rscript {0}
 
       - uses: r-lib/actions/check-r-package@v2
