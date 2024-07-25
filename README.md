@@ -42,6 +42,9 @@ vc$neo_query_wrapper$get_anatomical_individual_TermInfo(list('VFB_00010001'))
 # Query by label supported by default$
 vc$get_terms_by_region('fan-shaped body')
 ```
+
+The VFB_connect python library has a full documentation site at https://vfb-connect.readthedocs.io/.
+
 ## Next steps
 
 * make a general R helper function to improve formatting of results
