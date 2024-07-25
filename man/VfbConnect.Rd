@@ -42,7 +42,7 @@ vc2$neo_query_wrapper$get_type_TermInfo(list('FBbt_00003686'), summary=TRUE)
 # Information about a dataset linked to a paper
 vc$neo_query_wrapper$get_DataSet_TermInfo(list('Ito2013'), summary=TRUE)
 
-vc$neo_query_wrapper$get_anatomical_individual_TermInfo(list('VFB_00010001'),  summary=T) \%>\%
+vc$neo_query_wrapper$get_anatomical_individual_TermInfo(list('VFB_00010001'),  summary=TRUE) \%>\%
 vc_df()
 
 # Get all terms relevant to a brain region (all parts and all overlapping cells)
