@@ -58,16 +58,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4                           EM FAFB Baltruschat et al 2021       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5                                EM L1 Barnes et al., 2022       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6                    EM FAFB Bates and Schlegel et al 2020       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                  id                                     tags</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       Andrade2019 Entity|DataSet|Individual|has_image|L1EM</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2           Aso2014      Entity|DataSet|Individual|has_image</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      AsoRubin2016      Entity|DataSet|Individual|has_image</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   Baltruschat2021 Entity|DataSet|Individual|has_image|FAFB</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        Barnes2022           Entity|DataSet|Individual|L1EM</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 BatesSchlegel2020 Entity|DataSet|Individual|has_image|FAFB</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                  id                                         tags</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1       Andrade2019 Entity, DataSet, Individual, has_image, L1EM</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2           Aso2014       Entity, DataSet, Individual, has_image</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3      AsoRubin2016       Entity, DataSet, Individual, has_image</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4   Baltruschat2021 Entity, DataSet, Individual, has_image, FAFB</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5        Barnes2022            Entity, DataSet, Individual, L1EM</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 BatesSchlegel2020 Entity, DataSet, Individual, has_image, FAFB</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                                                                                                  description</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1                                                        L1 EM reconstructed neurons from Andrade et al 2019</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                                                                                       &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                                                                                       NULL</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3 For comparison of the properties of memories formed by optogenetic activation of individual DAN cell types</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4                                                  FAFB EM reconstructed neurons from Baltruschat et al 2021</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5                                                       L1 EM reconstructed neurons from Barnes et al., 2022</span>
@@ -87,66 +87,9 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5 10.1371/journal.pone.0266064</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6    10.1016/j.cub.2020.06.042</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span><span class="va">df</span>, <span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/nchar.html" class="external-link">nzchar</a></span><span class="op">(</span><span class="va">DOI</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                              label symbol                   id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 93        Split-GAL4 lines from Baker et al., 2022              SplitBaker2022</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 96       Split-GAL4 lines from Cheong et al., 2024             SplitCheong2024</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 100        Split-GAL4 lines from Feng et al., 2014               SplitFeng2014</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 111     Split-GAL4 lines from Longden et al., 2023            SplitLongden2023</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 118        Split-GAL4 lines from Reyn et al., 2017               SplitReyn2017</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 119       Split-GAL4 lines from Rubin et al., 2024              SplitRubin2024</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 120 Split-GAL4 lines from Schlichting et al., 2019        SplitSchlichting2019</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 126    Split-GAL4 lines from Takemura et al., 2017           SplitTakemura2017</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 130     Split-GAL4 lines from Tuthill et al., 2013            SplitTuthill2013</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 131     Split-GAL4 lines from Vijayan et al., 2023            SplitVijayan2023</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 145            L3 Larval CNS Template (Truman2016)                  Truman2016</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 146              Truman Larval Flip-Out Collection              TrumanWood2018</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 147              Truman Larval Flip-Out Collection        TrumanWood2018public</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155             L3 neuropils (WoodHartenstein2018)         WoodHartenstein2018</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                    tags</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 93            Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 96            Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 100           Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 111           Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 118           Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 119           Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 120           Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 126           Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 130           Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 131           Entity|DataSet|Individual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 145 Entity|DataSet|Individual|has_image</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 146 Entity|DataSet|Individual|has_image</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 147 Entity|DataSet|Individual|has_image</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155 Entity|DataSet|Individual|has_image</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                                                                                                                         description</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 93                                                                                                                         Split-GAL4 lines from Baker et al., 2022</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 96                                                                                                                        Split-GAL4 lines from Cheong et al., 2024</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 100                                                                                                                         Split-GAL4 lines from Feng et al., 2014</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 111                                                                                                                      Split-GAL4 lines from Longden et al., 2023</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 118                                                                                                                         Split-GAL4 lines from Reyn et al., 2017</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 119                                                                                                                        Split-GAL4 lines from Rubin et al., 2024</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 120                                                                                                                  Split-GAL4 lines from Schlichting et al., 2019</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 126                                                                                                                     Split-GAL4 lines from Takemura et al., 2017</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 130                                                                                                                      Split-GAL4 lines from Tuthill et al., 2013</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 131                                                                                                                      Split-GAL4 lines from Vijayan et al., 2023</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 145                                                               Template image by James W. Truman and the Fly Light Project Team at HHMI Janelia Research Campus.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 146 A selection of neurons from specimens created by Dr. Jim Truman at Janelia Research Campus using the multicolor flip out technique from the FlyLight GMR lines.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 147                                                                       Images by James W. Truman and the Fly Light Project Team at HHMI Janelia Research Campus.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155                                                                                                                                                            &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     miniref FlyBase PMID DOI</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 93                          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 96                          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 100                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 111                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 118                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 119                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 120                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 126                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 130                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 131                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 145                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 146                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 147                         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155                         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] label       symbol      id          tags        description miniref    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [7] FlyBase     PMID        DOI        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;0 rows&gt; (or 0-length row.names)</span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
